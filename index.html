@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY QR Generator</title>
+    <link rel="shortcut icon" href="/images/4161429.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form">
+        <h2>QR code Generator</h2>
+        <input type="text" name="user_name" id="user-name" class="user_name input" placeholder="Enter Your name..">
+        <input type="email" name="user_email" id="user-email" class="user_email input" placeholder="Enter Your email..">
+        <input type="tel" name="user_mobile_num" id="user-mobile-num" class="user_mobile_num input" placeholder="Enter Your mobile no.." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+        <button class="generate-qr-code-button" id="qr-btn">Generate QR code</button>
+    </div>
+
+    <div class="qr-canvas">
+        <h2>Your QR code</h2>
+         <div class="loader"></div>
+        <img src="/images/4161429.jpg"  class="qr-image">
+    </div>
+
+
+    <script src="/app.js"></script>
+</body>
+</html>
